@@ -21,9 +21,9 @@ function index()
 		return
 	end
 	
-	entry({"admin", "custom"}, firstchild(), "我的", 89).dependent = false
+  entry({"admin", "nas"}, firstchild(), "NAS", 44).dependent = false
+	
 	local page
-	page = entry({"admin", "custom", "usb_printer"}, cbi("usb_printer"), _("USB Printer Server"), 3)
-	page.i18n = "usb-printer"
-    page.dependent = true
+
+	page = entry({"admin", "nas", "usb_printer"}, cbi("usb_printer"), _("USB Printer Server"), 50)
 end
